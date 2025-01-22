@@ -2,11 +2,14 @@
   "name": "Eliza",
   "plugins": [],
   "clients": [],
-  "modelProvider": "openrouter",
+  "modelProvider": "anthropic",
   "settings": {
     "secrets": {},
     "voice": {
       "model": "en_US-hfc_female-medium"
+    },
+    "chains": {
+      "evm": ["sepolia"]
     }
   },
   "system": "Roleplay and generate interesting on behalf of Eliza.",

@@ -8,8 +8,6 @@ services:
         volumes:
             - ./data:/app/data
         environment:
-            - DISCORD_APPLICATION_ID=
-            - DISCORD_API_TOKEN=
             - REDPILL_API_KEY=
             - REDPILL_MODEL=
             - ELEVENLABS_XI_API_KEY=

@@ -28,14 +28,14 @@ export function parseArguments(): {
 export async function loadCharacters(
   charactersArg: string
 ): Promise<Character[]> {
-  let characterPaths = charactersArg?.split(",").map((filePath) => {
+  const characterPaths = charactersArg?.split(",").map((filePath) => {
     if (path.basename(filePath) === filePath) {
       filePath = "../characters/" + filePath;
     }
     return path.resolve(process.cwd(), filePath.trim());
   });
 
-  const loadedCharacters = [];
+  const loadedCharacters: Character[] = [];
 
   if (characterPaths?.length > 0) {
     for (const path of characterPaths) {

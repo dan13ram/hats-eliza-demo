@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
+import { Calendar, Inbox, /*Home, Search, Settings*/ } from "lucide-react";
 import { useParams } from "react-router-dom";
 
 import {
@@ -10,7 +10,7 @@ import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
-    SidebarTrigger,
+    //SidebarTrigger,
 } from "@/components/ui/sidebar";
 
 // Menu items.

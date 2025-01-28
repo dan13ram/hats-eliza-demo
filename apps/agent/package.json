@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts",
+    "typecheck": "tsc --noEmit",
     "start": "tsc && node --loader ts-node/esm src/index.ts",
     "clean": "./scripts/clean.sh",
     "lint": "eslint src/**/*.ts",
